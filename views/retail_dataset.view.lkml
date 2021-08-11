@@ -125,4 +125,19 @@ view: retail_dataset {
     type: count
     drill_fields: [productname, customername]
   }
+
+  ###################################################################################3333
+  measure: total_discount {
+    label: "할인금액"
+    type: sum
+    sql: ${TABLE}.discount ;;
+  }
+
+  measure: total_price {
+    label: "금액"
+    type: sum
+    sql: ${TABLE}.price ;;
+  }
+
+
 }

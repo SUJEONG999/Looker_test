@@ -1,4 +1,4 @@
-connection: "kexin_test "
+connection: "kexin_test"
 
 include: "/views/*.view.lkml"                # include all views in the views/ folder in this project
 # include: "/**/*.view.lkml"                 # include all views in this project
