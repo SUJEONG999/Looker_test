@@ -8,5 +8,8 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 # # and define the joins that connect them together.
 #
  explore: retail_dataset {
-
+    access_filter: {
+      field: retail_dataset.bigcategory
+      user_attribute: bigcategory
+    }
  }
